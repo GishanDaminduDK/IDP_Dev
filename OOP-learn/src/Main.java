@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         double[] vector1Elements = {1.0, 2.0, 3.0};
@@ -18,5 +20,17 @@ public class Main {
         System.out.println("Resultant Vector (Vector 1 + Vector 2):");
         results1.display();
         results2.display();
+        Scanner sc1=new Scanner(System.in);
+        System.out.println("Enter the integer num");
+        int num=sc1.nextInt();
+        System.out.println(num*num);
+        int numbers[]= new int[6];
+        for (int i=0; i<6;i++){
+            numbers[i]=sc1.nextInt();
+
+
+        }
+        Book mybook=new Book("Java Programming", "Jhone Smith", 300);
+        mybook.displayINfo();
     }
 }
